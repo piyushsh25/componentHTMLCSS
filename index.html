@@ -14,7 +14,7 @@
     <hr/>
     <h2>@Typography</h2>
 <hr/>
-    <h2>Biggest heading</h2>
+    <h1>Biggest heading</h1>
     <h2>Second biggest</h2>
     <p>Normal text,wraps like a paragraph. This is a paragraph tag so this is onevjsv njsdn dekevne</p>
     <small>Relatively smaller</small>
@@ -30,7 +30,7 @@
 <a class="secondary link" href="/">Secondary Link</a>
 <br/><br/>
 <hr/>
-<h2>Unordered inline list</h2>
+<h2>Unordered block list</h2>
 <ul>
     <li>Item 1</li>
     <li>Item 2</li>
@@ -39,7 +39,7 @@
     <li>Item 5</li>    
 </ul>
 
-<h2> Ordered list</h2>
+<h2> inline list</h2>
 <ol>
     <li class="list-item-inline">Item 1</li>
     <li class="list-item-inline">Item 2</li>
@@ -47,7 +47,7 @@
     <li class="list-item-inline">Item 4</li>
     <li class="list-item-inline">Item 5</li>    
 </ol>
-<h2> ordered inline list</h2>
+<h2> reverse ordered list</h2>
 <ol reversed>
     <li>egg </li>
     <li>milk</li>
@@ -59,56 +59,70 @@
 
 <h2>@nav</h2>
 
-<nav>
-    <div>I am Piyyy</div>
-    <ul>
-        <li>
-            <a href="/">home </a>
+<nav class="navigation">
+    <div class="nav-brand">Piyyy</div>
+    <ul class="unordered nav-pills">
+        <li class="list-item-inline">
+            <a class="link link-active" href="/">home </a>
         </li>
-        <li>
-            <a href="/">product</a>
+        <li class="list-item-inline ">
+            <a class="link" href="/">product</a>
         </li>
-        <li>
-            <a href="/">projects</a>
+        <li class="list-item-inline">
+            <a class="link" href="/">projects</a>
         </li>
     </ul>
 </nav>
-
+<br/>
 <h2>header</h2>
 
-<header>
-    <img src="images/hero.svg"/>
+<header class="hero">
+    <h1>this is h1 inside header</h1>
+    <img class="hero-img"  src="images/hero.svg"/>
+    
     <hr/>
     <h1>best CBC for full stack dev</h1>
-    <img src="https://pbs.twimg.com/profile_images/1350667071202332673/glWYSyvy_400x400.jpg"/>
+    <img class="hero-img" src="https://pbs.twimg.com/profile_images/1350667071202332673/glWYSyvy_400x400.jpg"/>
     <hr/>
-    <h1>heading inside hero</h1>
+    <h1 class="hero-heading">Piyush, the <span>MERN</span> stack developer</h1>
 </header>
 
 <hr/>
-<h2>@section</h2>
+<h1>@section</h1>
 
-<section>
-    <h3>@fluid section</h3>
-    <p>expands to the entire page</p>
+<section class="section-one">
+    <div class="container-fluid ">
+        <h3>@fluid section</h3>
+        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        </p>
+    </div>
+
 </section>
 
-<section>
-    <h3>@white section</h3>
-    <p>white background</p>
-</section>
-
-<section>
+<section class="section-two">
+    <div class="container-fluid ">
     <h3>@off-white section</h3>
-    <p>grey background</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+</div>
+</section>
+
+<section class="section-three">
+    <div class="container-fluid">
+    <h3>white section</h3>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+</div>
 </section>
 <hr/>
-<footer>
-    <div>Small heading</div>
-    <ul>
-        <li>social1</li>
-        <li>social2</li>
-        <li>social3</li>                
+
+<h1>@footer</h1>
+<footer class="footer">
+    <div class="footer-header">Small heading inside footer</div>
+    <ul class="footer-ul">
+        <li class="social list-item-inline"><a class="social" href="/">social1</a></li>
+        <li class="social list-item-inline"><a class="social" href="/">social2</a></li>
+        <li class="social list-item-inline"><a class="social" href="/">social3</a></li>                
     </ul>
 </footer>
 
